@@ -1,0 +1,25 @@
+{
+  "name": "weekend-challenge-3",
+  "version": "1.0.0",
+  "description": "The To-Do App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleleyva10/weekend-challenge-3.git"
+  },
+  "author": "Alessandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleleyva10/weekend-challenge-3/issues"
+  },
+  "homepage": "https://github.com/aleleyva10/weekend-challenge-3#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pg": "^6.2.3"
+  }
+}

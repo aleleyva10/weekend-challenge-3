@@ -1,4 +1,4 @@
-# Weekend_Challenge_3
+Weekend-Challenge-3
 
 The To-Do App
 

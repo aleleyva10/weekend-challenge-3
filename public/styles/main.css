@@ -1,0 +1,23 @@
+h3 {
+  display: inline-block;
+  width: 50%;
+}
+.taskItem {
+  border: 1px solid black;
+  margin: 4px;
+  padding: 2px;
+  background-color: red;
+
+}
+#completeBtn {
+  height:3em;
+  width: 6em;
+}
+#deleteBtn {
+  height: 3em;
+  width: 6em;
+  margin-left: 2em;
+}
+.complete {
+  background-color: green;
+}

@@ -72,3 +72,34 @@ pool.connect(function(err, connection, done) {
     };
   }); //end pool.connect
 }); //end get task
+
+app.delete('/getTask', function(req, res){
+  pool.connect(function(err, connection, done) {
+    var id= req.body.id;
+    console.log(req.body);
+    if (err) {
+      console.log('error');
+      done();
+      res.sendStatus(400);
+    } else {
+     connection.query('DELETE FROM tasks_to_do ' + 'WHERE id = $1',[id]);
+        res.send(200);
+      };
+    }); //end pool
+}); // end delete
+
+app.put('/getTask', function(req, res){
+  pool.connect(function(err, connection, done) {
+    var id= req.body.id;
+    var data = req.body.data;
+    console.log(req.body);
+    if (err) {
+      console.log('error');
+      done();
+      res.sendStatus(400);
+    } else {
+     connection.query('UPDATE tasks_to_do SET complete = $1 WHERE id = $2',[data, id]);
+        res.send(200);
+      };
+    }); // end pool
+}); // end post
